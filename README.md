@@ -1,6 +1,20 @@
 # yii2-amcharts
 http://www.amcharts.com/
 
+
+
+To install, either run
+
+```
+$ php composer.phar require mitrm/yii2-amcharts "*"
+```
+
+or add
+
+```
+"mitrm/yii2-amcharts": "*"
+```
+
 Пример: 
 Выводит пирог
 ```php
