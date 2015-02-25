@@ -12,7 +12,7 @@ class AmChartAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/mitrm/amcharts/assets';
+    public $sourcePath = '@mitrm/yii2-amcharts/assets';
 
     /**
      * @inheritdoc

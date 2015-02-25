@@ -23,7 +23,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"mitrm\\yii\\extensions\\": ""
+			"mitrm\\amcharts\\": ""
 		}
 	}
 }
