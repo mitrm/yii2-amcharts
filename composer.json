@@ -1,33 +1,29 @@
 {
-	"name": "zelenin/yii2-sms_ru",
-	"description": "Yii2 extension for sms.ru",
-	"version": "0.0.3",
+	"name": "mitrm/yii2-amcharts",
+	"description": "Yii2 extension for amcharts.com",
+	"version": "0.0.1",
 	"type": "yii2-extension",
-	"keywords": ["yii", "yii2", "sms", "sms.ru"],
-	"homepage": "https://github.com/zelenin/yii2-sms_ru",
-	"time": "2014-03-30",
+	"keywords": ["yii2", "amcharts", "charts"],
+	"homepage": "https://github.com/mitrm/yii2-amcharts",
+	"time": "2015-02-25",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Aleksandr Zelenin",
-			"email": "aleksandr@zelenin.me",
-			"homepage": "http://zelenin.me",
+			"name": "Mitskevich Ruslan",
+			"email": "mitrm.ru@gmail.com",
 			"role": "Developer"
 		}
 	],
 	"support": {
-		"issues": "https://github.com/zelenin/yii2-sms_ru/issues",
-		"source": "https://github.com/zelenin/yii2-sms_ru"
+		"source": "https://github.com/mitrm/yii2-amcharts"
 	},
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "*",
-		"zelenin/smsru": "1.4.2"
 	},
 	"autoload": {
 		"psr-4": {
-			"Zelenin\\yii\\extensions\\": ""
+			"mitrm\\yii\\extensions\\": ""
 		}
 	},
-	"minimum-stability": "stable"
 }
