@@ -6,7 +6,7 @@ http://www.amcharts.com/
 To install, either run
 
 ```
-$ php composer.phar require mitrm/yii2-amcharts "dev-master"
+$ php composer.phar require --prefer-dist mitrm/yii2-amcharts "dev-master"
 ```
 
 or add
