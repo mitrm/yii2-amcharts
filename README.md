@@ -3,7 +3,7 @@ http://www.amcharts.com/
 
 Пример: 
 Выводит пирог
-
+```php
 $chartConfiguration = [
     'dataProvider' => [
 		['author' => 'Вася', 'title' => 'Васильев Вася', 'count' => 5],
@@ -21,8 +21,6 @@ $chartConfiguration = [
         'valueText' => '[[value]] ([[percents]]%)',
         'width' => 390,
     ],
-    
-    
     'maxLabelWidth' => 150,
     'marginLeft' => -100,
     'marginTop' => 0,
@@ -32,14 +30,11 @@ $chartConfiguration = [
     'titleField' => 'title',
     'descriptionField' => 'author',
     'balloonText' => '[[title]]<br><span style=\'font-size:12px\'><b>[[value]]</b> ([[percents]]%)</span>',
-    
-   
-
 ];
 echo mitrm\amcharts\AmChart::widget([
     'chartConfiguration' => $chartConfiguration, 
     'options' => ['id' => 'chart_id'],
     'width' => '100%',
     'language' => 'ru',
-    
 ]);
+```
