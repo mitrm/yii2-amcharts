@@ -23,8 +23,6 @@ use yii\helpers\Html;
 *        'valueText' => '[[value]] ([[percents]]%)',
 *        'width' => 390,
 *    ],
-*    
-*    
 *    'maxLabelWidth' => 150,
 *    'marginLeft' => -100,
 *    'marginTop' => 0,
@@ -34,16 +32,12 @@ use yii\helpers\Html;
 *    'titleField' => 'title',
 *    'descriptionField' => 'author',
 *    'balloonText' => '[[title]]<br><span style=\'font-size:12px\'><b>[[value]]</b> ([[percents]]%)</span>',
-*    
-*   
-*
 *];
 *echo mitrm\amcharts\AmChart::widget([
 *    'chartConfiguration' => $chartConfiguration, 
 *    'options' => ['id' => 'chart_id'],
 *    'width' => '100%',
 *    'language' => 'ru',
-*    
 *]);
 */
 
