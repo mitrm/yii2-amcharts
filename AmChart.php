@@ -52,6 +52,8 @@ class AmChart extends \yii\base\Widget
     
     public $language;
     
+    public $zoomChart=false;
+    
     protected $_chartId;
     
     /**
@@ -97,6 +99,16 @@ class AmChart extends \yii\base\Widget
         if (!isset($this->chartConfiguration['pathToImages']))
         {
             $this->chartConfiguration['pathToImages'] = $assetBundle->baseUrl . '/amcharts/images/';
+        }
+        if ($this->zoomChart != false)
+        {
+            $this->view->registerJs('
+                    '.$this->chartId.'.addListener("rendered", zoomChart_'.$this->chartId.');
+                    zoomChart_'.$this->chartId.'();
+                    function zoomChart_'.$this->chartId.'(){
+                        '.$this->chartId.'.zoomToIndexes('.$this->chartId.'.dataProvider.length - '.$this->zoomChart['lenght_one'].', '.$this->chartId.'.dataProvider.length - '.$this->zoomChart['lenght_two'].');
+                    }
+                ',View::POS_LOAD);
         }
         $chartConfiguration = json_encode($this->chartConfiguration);
         $js = $this->chartId . " = AmCharts.makeChart(\"{$this->chartId}\", {$chartConfiguration});";
