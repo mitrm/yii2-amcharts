@@ -56,6 +56,6 @@ class AmChartAsset extends AssetBundle
     
     public function addThemeJs($theme)
     {
-        $this->js[] = 'themes/' . $theme . '.js';
+        $this->js[] = 'amcharts/themes/' . $theme . '.js';
     }
 }
