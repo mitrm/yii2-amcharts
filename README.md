@@ -15,8 +15,8 @@ or add
 "mitrm/yii2-amcharts": "dev-master"
 ```
 
-Пример: 
-Выводит пирог
+Example: 
+Displays a pie
 ```php
 $chartConfiguration = [
     'dataProvider' => [
