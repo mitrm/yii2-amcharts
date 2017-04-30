@@ -54,7 +54,7 @@ class amMapAsset extends AssetBundle
     
     public function addThemeJs($theme)
     {
-        $this->js[] = 'themes/' . $theme . '.js';
+        $this->js[] = 'ammap/themes/' . $theme . '.js';
     }
     
     /**
