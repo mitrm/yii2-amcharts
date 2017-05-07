@@ -109,7 +109,7 @@ class AmChart extends \yii\base\Widget
                         '.$this->chartId.'.zoomToIndexes('.$this->chartId.'.dataProvider.length - '.$this->zoomChart['lenght_one'].', '.$this->chartId.'.dataProvider.length - '.$this->zoomChart['lenght_two'].');
                     }
                     var resizeChart = function (){
-                        pay_user.validateSize();
+                        '.$this->chartId.'.validateSize();
 
                     }
                     setTimeout(resizeChart, 2000);
